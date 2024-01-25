@@ -1,0 +1,26 @@
+.login_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    margin: 5%;
+    margin-top: 7rem;
+
+    
+    .login_section__header{
+        margin-top: 10%;
+        margin-bottom: 2%;
+
+    }
+
+    .login_section__para{
+        font-size: 1.1rem;
+
+        margin-bottom: 2%;
+    }
+}
+
+.margin{
+    margin-top: 10%;
+}

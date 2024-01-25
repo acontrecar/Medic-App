@@ -1,20 +1,37 @@
 <section class="login_section">
-    <h1>
+    
+    <h1 class="login_section__header">
         Bienvenidos a MedicApp
     </h1>
 
-    <p>
+    <p class="login_section__para">
         La web para organizar la vida de un paciente y de su cuidador
     </p>
 
-    <form class="form">
-        <label>Email
-            <input type="email" name="" id="">
+    <form class="form margin">
+        <label class="label">
+            <p>Correo electronico</p>
+
+            <div>
+                <img class="icon" src="../../../../../assets/icons/emailIcon.svg" alt="">
+                <input class="input" autocomplete="email" type="email" name="" id="">
+            </div>
         </label>
 
-        <label>
-            Contrasenia
-            <input type="password">
+        <label class="label">
+            <p>Contraseña</p>
+
+            <div class="form_inpu">
+                <img class="icon" src="../../../../../assets/icons/passwordIcon.svg" alt="">
+                <input class="input" [type]="eyeOpen ? 'text' : 'password'">
+                <img (click)="changeIconInput()" class="icon pointer" [src]=" eyeOpen ? '../../../../../assets/icons/eyeOpenIcon.svg' : '../../../../../assets/icons/eyeCloseIcon.svg'" alt="">
+            </div>
         </label>
+
+        <div class="space-submit flex-column">
+            <input class="btn_submit" type="submit" value="Login">
+            <a routerLink="/register" class="subtitle_acount pointer">No tienes cuenta? Registrate</a>
+        </div>
+       
     </form>
 </section>

@@ -1,1 +1,57 @@
-<p>register works!</p>
+<section class="login_section">
+    
+    <h1 class="login_section__header">
+        Bienvenidos a MedicApp
+    </h1>
+
+    <p class="login_section__para">
+        Crea una cuenta para disfrutar de nuestros servicios
+    </p>
+
+    <form class="form margin">
+
+        <label class="label">
+            <p>Nombre</p>
+
+            <div>
+                <img class="icon" src="../../../../../assets/icons/userIcon.svg" alt="">
+                <input class="input" autocomplete="name" type="text" name="" id="name">
+            </div>
+        </label>
+
+
+        <label class="label">
+            <p>Correo electronico</p>
+
+            <div>
+                <img class="icon" src="../../../../../assets/icons/emailIcon.svg" alt="">
+                <input class="input" autocomplete="email" type="email" name="" id="">
+            </div>
+        </label>
+
+        <label class="label">
+            <p>Contraseña</p>
+
+            <div class="form_inpu">
+                <img class="icon" src="../../../../../assets/icons/passwordIcon.svg" alt="">
+                <input class="input" [type]="eyeOpen ? 'text' : 'password'">
+                <img (click)="changeIconInput()" class="icon pointer" [src]=" eyeOpen ? '../../../../../assets/icons/eyeOpenIcon.svg' : '../../../../../assets/icons/eyeCloseIcon.svg'" alt="">
+            </div>
+        </label>
+
+        <label class="label">
+            <p>Repita la contraseña</p>
+
+            <div class="form_inpu">
+                <img class="icon" src="../../../../../assets/icons/passwordIcon.svg" alt="">
+                <input class="input" type="password">
+            </div>
+        </label>
+
+        <div class="space-submit flex-column">
+            <input class="btn_submit" type="submit" value="Registro">
+            <a routerLink="/" class="subtitle_acount pointer">Ya tienes cuenta? Logeate</a>
+        </div>
+       
+    </form>
+</section>
