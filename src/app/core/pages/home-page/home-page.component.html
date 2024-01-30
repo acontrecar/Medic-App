@@ -1,1 +1,13 @@
-<p>home-page works!</p>
+<main>
+  @if (pacientes.length>0) {
+  <h3>De que paciente necesitas saber hoy?</h3>
+
+  <div class="patients_list">
+    @for (paciente of pacientes; track paciente) {
+    <button>{{ paciente }}</button>
+    }
+  </div>
+  } @else {
+  <h3>Todavia no tienes pacientes, puedes ingresarlos en ...</h3>
+  }
+</main>

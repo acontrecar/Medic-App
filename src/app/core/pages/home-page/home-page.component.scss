@@ -1,3 +1,15 @@
 p {
   margin-top: 15%;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  flex-direction: column;
+}
+
+.patients_list {
+  margin-top: 5%;
+}
