@@ -15,6 +15,7 @@
 
   .hamburger_menu {
     display: none;
+    cursor: pointer;
 
     @media screen and (max-width: 600px) {
       display: block;
@@ -51,12 +52,14 @@
     @media screen and (max-width: 600px) {
       width: 100%;
       overflow: hidden;
+      display: none;
     }
   }
 }
 
 .block {
   display: block !important;
+  animation: fadeInOut 0.3s ease-in-out;
 }
 
 .container {
@@ -64,4 +67,13 @@
   position: relative;
   top: 0;
   left: 0;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

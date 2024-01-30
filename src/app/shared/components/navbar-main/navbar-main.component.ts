@@ -5,8 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './navbar-main.component.html',
-  styleUrl: './navbar-main.component.scss'
+  styleUrl: './navbar-main.component.scss',
 })
 export class NavbarMainComponent {
+  public isOpenNavbar: boolean = false;
 
+  toggleMenu(): void {
+    this.isOpenNavbar = !this.isOpenNavbar;
+    console.log(this.isOpenNavbar);
+  }
 }
