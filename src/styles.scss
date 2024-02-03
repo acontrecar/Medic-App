@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 
-    font-weight: normal;
-  }
-
+  font-weight: normal;
+}
 
 // COLORS
 
@@ -26,104 +25,109 @@ $dark-blue-950: #0e066f;
 
 // STYLES
 
-  .form{
-    display: flex;
-    flex-direction: column;
+.form {
+  display: flex;
+  flex-direction: column;
 
-    .label{
-      border: 2px solid $dark-blue-400;
-      margin-bottom: 5%;
-      border-radius: 10px;
-      width: 110%;
+  .label {
+    border: 2px solid $dark-blue-400;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    width: 110%;
 
-      background-color: $dark-blue-100;
+    background-color: $dark-blue-100;
 
-      .input{
-        border: none;
-        background-color: transparent;
-        font-size: 1.1rem;
-        padding-bottom: 4%;
-        padding-left: 2%;
-
-        &:focus {
-          outline: none;
-        }
-      }
-
-      p{
-        font-size: 1.1rem;
-        padding-top: 2%;
-        text-decoration: underline;
-        text-decoration-color: $dark-blue-800;
-      }
-    }
-    
-  }
-
-  .space-submit{
-
-    .subtitle_acount{
-      color: $dark-blue-200;
-      font-size: 1.1rem;
-      margin-top: 1rem;
-
-      
-        display: flex;
-        justify-content: flex-start;
-        &:hover {
-          color: $dark-blue-200;
-          text-decoration: underline;
-        }
-     }
-
-    .btn_submit{
-      background-color: $dark-blue-300;
-      color: $dark-blue-800;
-      font-size: 1.2rem;
-      padding: 1rem 3rem 1rem 3rem;
+    .input {
       border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 110%;
-      &:hover {
-        background-color: $dark-blue-300;
-        transform: scale(1.1);
-        transition: transform 0.3s ease-in-out;
+      background-color: transparent;
+      font-size: 1.1rem;
+      padding-bottom: 4%;
+      padding-left: 2%;
+
+      &:focus {
+        outline: none;
       }
+    }
+
+    p {
+      font-size: 1.1rem;
+      padding-top: 2%;
+      text-decoration: underline;
+      text-decoration-color: $dark-blue-800;
+    }
+  }
+}
+
+.space-submit {
+  .subtitle_acount {
+    color: $dark-blue-200;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: flex-start;
+    &:hover {
+      color: $dark-blue-200;
+      text-decoration: underline;
     }
   }
 
-  .flex-column{
-    display: flex;
-    flex-direction: column;
+  .btn_submit {
+    background-color: $dark-blue-300;
+    color: $dark-blue-800;
+    font-size: 1.2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 110%;
+    &:hover {
+      background-color: $dark-blue-300;
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
   }
+}
 
-  .custom-shape-divider-top-1706181288 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-shape-divider-top-1706181288 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1706181288 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 152px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 152px;
 }
 
 .custom-shape-divider-top-1706181288 .shape-fill {
-    fill: #D1D5FF;
+  fill: #d1d5ff;
 }
 
-.icon{
+.icon {
   height: 30px;
   position: relative;
   bottom: -8px;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
+}
+
+.container_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  flex-direction: column;
 }
